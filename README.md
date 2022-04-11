@@ -100,5 +100,9 @@ https://m.nuaa.edu.cn/ncov/wap/default
 https://m.nuaa.edu.cn/ncov/wap/nuaa/index
 
 ## Last but not least
-如果后续教务处修改打卡规则，可通过f12后进入控制台查看所需的变量信息（当然直接查看元素也是可行的)
-![](https://pic.imgdb.cn/item/6254050b239250f7c5d1450f.png)
+如果后续教务处修改打卡规则，可通过f12后进入控制台输入
+```
+vm.info
+```
+查看所需的变量信息（当然直接查看元素也是可行的)
+
