@@ -1,0 +1,13 @@
+{
+    "mail_username": "123456@qq.com",
+    "mail_password": "qwertyuiopasdfgh",
+    "smtp_host": "smtp.qq.com",
+    "users": [
+        {
+            "name": "xxxx",
+            "student_id": "xxxxx",
+            "student_password": "xxxxx",
+            "receiver_mail": "xxxx@qq.com"
+        }
+    ]
+}
