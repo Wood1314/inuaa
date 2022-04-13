@@ -231,6 +231,10 @@ def sign(m, d, user, smtp_host, mail_username, mail_password):
                 'bfhzjyq': '3', #不符合接种要求
                 'cjfxsfhs': '1', #春季返校后是否坐核酸
                 'gzczxq': '2', #工作常驻校区
+                'sfjkyc': '0',
+                'sfmrhs': '1',
+                'ifcyglq': '0',
+                'cjfxsfhs': '1',
             }
             time.sleep(delay)
             r = requests.post('https://m.nuaa.edu.cn/ncov/wap/default/save',
