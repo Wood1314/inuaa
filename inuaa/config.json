@@ -4,10 +4,10 @@
     "smtp_host": "smtp.qq.com",
     "users": [
         {
-            "name": "xxxx",
+            "name": "xxxxx",
             "student_id": "xxxxx",
-            "student_password": "xxxxx",
-            "receiver_mail": "xxxx@qq.com"
+            "student_password": "xxxxxx",
+            "receiver_mail": ""
         }
     ]
 }
