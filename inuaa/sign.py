@@ -276,9 +276,6 @@ def main():
     users = config['users']
     
     # 一起登陆啊，失败了就先空着，等打卡时候再来管他
-    for user in users:
-        print('Login...:', user['name'])
-        user['cookie'], user['uid'], user['id'] = login(user['student_id'], user['student_password'])
     
    
 
@@ -290,6 +287,9 @@ def main():
         t = time.localtime()
 
         if t.tm_mday != last_post:
+            for user in users:
+                print('Login...:', user['name'])
+                user['cookie'], user['uid'], user['id'] = login(user['student_id'], user['student_password'])
             # 新的一天，拷贝一份完整的打卡清单，全部打一遍卡。但是这样做的话每次更新cookie，users也自动更新。
 
             print('----------开始每日打卡----------')
@@ -315,6 +315,9 @@ def main():
         
             print('----------重新打卡尝试----------')
             # 给每个失败的人打卡
+            for user in users:
+                print('Login...:', user['name']) 
+                user['cookie'], user['uid'], user['id'] = login(user['student_id'], user['student_password'])
             new_list = []   # 未完成打卡的暂时放这里
             for user in to_sign_list[:]:
                 print('**********' + user['name'] + '**********')
