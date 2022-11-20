@@ -7,7 +7,9 @@
             "name": "xxxxx",
             "student_id": "xxxxx",
             "student_password": "xxxxxx",
-            "receiver_mail": ""
+            "receiver_mail": "",
+            "imei": "xxxx",
+            "mobile_type": "ios"
         }
     ]
 }
