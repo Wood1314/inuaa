@@ -291,8 +291,7 @@ def main():
         if t.tm_mday != last_post:
             for user in users:
                 print('Login...:', user['name'])
-                user['cookie'], user['uid'], user['id'] = login(user['student_id'], user['student_password'],
-                                                                user['imei'], user['mobile_type'])
+                user['cookie'], user['uid'], user['id'] = login(user['student_id'], user['student_password'], user['imei'], user['mobile_type'])
             # 新的一天，拷贝一份完整的打卡清单，全部打一遍卡。但是这样做的话每次更新cookie，users也自动更新。
 
             print('----------开始每日打卡----------')
@@ -320,7 +319,7 @@ def main():
             # 给每个失败的人打卡
             for user in users:
                 print('Login...:', user['name'])
-                user['cookie'], user['uid'], user['id'] = login(user['student_id'], user['student_password'])
+                user['cookie'], user['uid'], user['id'] = login(user['student_id'], user['student_password'], user['imei'], user['mobile_type'])
             new_list = []  # 未完成打卡的暂时放这里
             for user in to_sign_list[:]:
                 print('**********' + user['name'] + '**********')
