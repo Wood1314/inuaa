@@ -92,6 +92,8 @@ vim config.json
 
 获取imei，需要自行抓包，获取inuaa登陆请求包（接口[https://m.nuaa.edu.cn/a_nuaa/api/login-v2/index](https://m.nuaa.edu.cn/a_nuaa/api/login-v2/index)），截取它的get参数imei或sid，对应的值就是配置文件中imei所需值。
 
+由于该接口无法通过网页访问，可以使用httpcanary或者burpsuit，fidder等工具走电脑代理对inuaa这个app直接抓包。
+
 ## Step 3
 
 发送通知的邮箱配置smtp邮箱服务，如qq邮箱的配置方法
