@@ -125,5 +125,3 @@ vm.info
 ## Contributers
 desperadoccy 
 thatshaman
-
-            "mobile_type": "ios"
