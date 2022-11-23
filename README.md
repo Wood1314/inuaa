@@ -122,3 +122,8 @@ vm.info
 ```
 
 查看所需的变量信息（当然直接查看元素也是可行的)
+### Contributer
+desperadoccy 
+thatshaman
+
+            "mobile_type": "ios"
